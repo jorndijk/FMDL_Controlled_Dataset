@@ -2,7 +2,7 @@ import os
 from PIL import Image
 import random
 
-def rotate_images(digit, input_base="mnist_digits", output_base="mnist_digits_rotated", min_angle=0, max_angle=45):
+def rotate_images(digit, input_base="mnist_digits", output_base="mnist_digits_rotated", min_angle=0, max_angle=20):
     input_dir = os.path.join(input_base, f"digit_{digit}")
     output_dir = os.path.join(output_base, f"digit_{digit}")
     os.makedirs(output_dir, exist_ok=True)
@@ -24,4 +24,6 @@ def rotate_images(digit, input_base="mnist_digits", output_base="mnist_digits_ro
 
 if __name__ == "__main__":
     digit_to_rotate = 9
+    rotate_images(digit_to_rotate)
+    digit_to_rotate = 5
     rotate_images(digit_to_rotate)

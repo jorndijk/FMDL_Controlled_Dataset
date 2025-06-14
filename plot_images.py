@@ -29,6 +29,8 @@ def show_mnist_images(digit, num_images, base_dir="mnist_digits"):
     plt.tight_layout()
     plt.show()
 
-digit_to_show = 5
-images_to_show = 10
-show_mnist_images(digit_to_show, images_to_show)
+if __name__ == "__main__":
+    digit_to_show = 5
+    images_to_show = 10
+    base_directory = "mnist_digits_rotated"
+    show_mnist_images(digit_to_show, images_to_show, base_directory)
