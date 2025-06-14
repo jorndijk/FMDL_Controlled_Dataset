@@ -24,6 +24,9 @@ def rotate_images(digit, input_base="mnist_digits", output_base="mnist_digits_ro
 
 if __name__ == "__main__":
     digit_to_rotate = 9
-    rotate_images(digit_to_rotate)
+    min_angle = 0
+    max_angle = 20
+    rotate_images(digit_to_rotate, min_angle=min_angle, max_angle=max_angle)
     digit_to_rotate = 5
-    rotate_images(digit_to_rotate)
+    rotate_images(digit_to_rotate, min_angle=min_angle, max_angle=max_angle)
+    print("\nImage rotation complete.")
