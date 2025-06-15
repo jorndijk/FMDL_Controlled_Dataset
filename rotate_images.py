@@ -23,6 +23,9 @@ def rotate_images(digit, input_base="mnist_digits", output_base="mnist_digits_ro
     print(f"Rotated {len(image_files)} images for digit {digit} and saved them in '{output_dir}'.")
 
 if __name__ == "__main__":
+    random_seed = 42 
+    random.seed(random_seed)
+    
     digit_to_rotate = 9
     min_angle = 0
     max_angle = 20

@@ -32,6 +32,8 @@ if __name__ == "__main__":
     DIGITS_TO_PROCESS = [5, 9]
     IMAGES_PER_DIGIT = 2000
     OUTPUT_DIRECTORY = "mnist_digits"
+    random_seed = 42
+    np.random.seed(random_seed)
     
     generate_base_dataset(
         digits_to_save=DIGITS_TO_PROCESS,
